@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shifted</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <h1>SHIFTED</h1>
+    <div class="form-container">
+        <form>
+            <!-- <label>Theme:</label> -->
+            <!-- <div class="options">
+                <button id="animals" class="option" type="button" name="theme">Animals</button>
+                <button id="space" class="option" type="button" name="theme">Space</button>
+                <button id="music" class="option selected" type="button" name="theme">Music</button>
+            </div> -->
+            <label>Theme:</label>
+            <div class="options">
+                <label><input id="animals" class="option" type="radio" name="theme" value="Animals">Animals</label>
+                <label><input id="space" class="option" type="radio" name="theme" value="Space">Space</label>
+                <label><input id="music" class="option" type="radio" name="theme" value="Music" checked>Music</label>
+            </div>
+
+            <label>Tone:</label>
+            <div class="options">
+                <label><input id="happy" class="option" type="radio" name="tone" value="Happy">Happy</label>
+                <label><input id="serious" class="option" type="radio" name="tone" value="Serious">Serious</label>
+                <label><input id="playful" class="option" type="radio" name="tone" value="Playful" checked>Playful</label>
+            </div>
+            <label>Length:</label>
+            <div class="options">
+                <label><input id="short" class="option" type="radio" name="length" value="Short">Short</label>
+                <label><input id="medium" class="option" type="radio" name="length" value="Medium" checked>Medium</label>
+                <label><input id="long" class="option" type="radio" name="length" value="Long">Long</label>
+            </div>
+            <br>
+            <label for="base-wording">Base Wording:</label>
+            <br>
+            <textarea id="learning-objective" name="learningObjective">Force of gravity</textarea>
+            <br>
+            <textarea id="base-wording" name="baseWording">Calculate the force of gravity acting on an object that has a mass of 10 kg and is located 3 meters above the ground</textarea>
+            <br>
+            <button id="submit-btn" type="button">Shift Wording</button>
+            <br>
+        </form>
+        <div class="shifted-container">
+            <label for="shifted-wording">Shifted Wording:</label>
+            <br>
+            <textarea id="shifted-wording" readonly></textarea>
+        </div>
+    </div>
+    <script src="static/script.js"></script>
+    
+
+</body>
+</html>
