@@ -3,6 +3,8 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     background-color: #F7F7F7;
+    font-family: 'Mulish', sans-serif;
+    
 }
 
 h1 {
@@ -37,7 +39,7 @@ h1 {
 }
 
 #submit-btn{
-  background-color: #cf9d9d;
+  background-color: #842626;
   border-radius: 5px;
   padding: 0.5rem;
   cursor: pointer;
@@ -110,3 +112,43 @@ h1 {
     font-weight: bold;
   }
   
+  #subject {
+    display: none;
+  }
+
+
+  .btn-option {
+    display: inline-block;
+    position: relative;
+    margin-right: 10px;
+  }
+  
+  .btn-option input[type="radio"] {
+    display: none;
+  }
+  
+  .btn-icon {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+  }
+  
+  .btn-label {
+    display: inline-block;
+    margin-left: 30px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  
+  .btn-option input[type="radio"]:checked + .btn-icon {
+    background-color: #E72618;
+  }
+  
+  .btn-option:hover .btn-icon {
+    background-color: #ddd;
+    cursor: pointer;
+  }

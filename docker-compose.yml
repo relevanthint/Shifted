@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    container_name: shifted
+    ports:
+      - "8000:8000"

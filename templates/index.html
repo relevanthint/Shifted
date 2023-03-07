@@ -4,30 +4,70 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shifted</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mulish">
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
     <h1>SHIFTED</h1>
     <div class="form-container">
         <form>
-            <!-- <label>Theme:</label> -->
-            <!-- <div class="options">
-                <button id="animals" class="option" type="button" name="theme">Animals</button>
-                <button id="space" class="option" type="button" name="theme">Space</button>
-                <button id="music" class="option selected" type="button" name="theme">Music</button>
+            <!-- <label>Theme:</label>
+            <div class="options">
+                <label><input id="sci-tech" class="option" type="radio" name="theme" value="Science and Tech">Science and Tech</label>
+                <label><input id="sports" class="option" type="radio" name="theme" value="Sports">Sports</label>
+                <label><input id="nature" class="option" type="radio" name="theme" value="Nature">Nature</label>
+                <label><input id="video-games" class="option" type="radio" name="theme" value="Video games">Video games</label>
+                <label><input id="music" class="option" type="radio" name="theme" value="Music" checked>Music</label>
+                <label><input id="cooking" class="option" type="radio" name="theme" value="Cooking">Cooking</label>
+                <label><input id="art" class="option" type="radio" name="theme" value="Art" checked>Art</label>
             </div> -->
+
             <label>Theme:</label>
             <div class="options">
-                <label><input id="animals" class="option" type="radio" name="theme" value="Animals">Animals</label>
-                <label><input id="space" class="option" type="radio" name="theme" value="Space">Space</label>
-                <label><input id="music" class="option" type="radio" name="theme" value="Music" checked>Music</label>
+              <label class="btn-option" for="sci-tech">
+                <input id="sci-tech" class="option" type="radio" name="theme" value="Science and Tech">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Science and Tech</span>
+              </label>
+              <label class="btn-option" for="sports">
+                <input id="sports" class="option" type="radio" name="theme" value="Sports">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Sports</span>
+              </label>
+              <label class="btn-option" for="nature">
+                <input id="nature" class="option" type="radio" name="theme" value="Nature">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Nature</span>
+              </label>
+              <label class="btn-option" for="video-games">
+                <input id="video-games" class="option" type="radio" name="theme" value="Video games">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Video games</span>
+              </label>
+              <label class="btn-option" for="music">
+                <input id="music" class="option" type="radio" name="theme" value="Music" checked>
+                <span class="btn-icon"></span>
+                <span class="btn-label">Music</span>
+              </label>
+              <label class="btn-option" for="cooking">
+                <input id="cooking" class="option" type="radio" name="theme" value="Cooking">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Cooking</span>
+              </label>
+              <label class="btn-option" for="art">
+                <input id="art" class="option" type="radio" name="theme" value="Art" checked>
+                <span class="btn-icon"></span>
+                <span class="btn-label">Art</span>
+              </label>
             </div>
 
             <label>Tone:</label>
             <div class="options">
-                <label><input id="happy" class="option" type="radio" name="tone" value="Happy">Happy</label>
-                <label><input id="serious" class="option" type="radio" name="tone" value="Serious">Serious</label>
-                <label><input id="playful" class="option" type="radio" name="tone" value="Playful" checked>Playful</label>
+                <label><input id="friendly" class="option" type="radio" name="tone" value="Friendly">Friendly</label>
+                <label><input id="encouraging" class="option" type="radio" name="tone" value="Encouraging">Encouraging</label>
+                <label><input id="positive" class="option" type="radio" name="tone" value="Positive">Positive</label>
+                <label><input id="professional" class="option" type="radio" name="tone" value="Professional">Professional</label>
+                <label><input id="clear" class="option" type="radio" name="tone" value="Clear" checked>Clear</label>
             </div>
             <label>Length:</label>
             <div class="options">
@@ -38,9 +78,13 @@
             <br>
             <label for="base-wording">Base Wording:</label>
             <br>
-            <textarea id="learning-objective" name="learningObjective">Force of gravity</textarea>
-            <br>
             <textarea id="base-wording" name="baseWording">Calculate the force of gravity acting on an object that has a mass of 10 kg and is located 3 meters above the ground</textarea>
+            <br>
+            <input type="text" id="subject" name="subject" value="subject"></textarea>
+            <input type="text" id="block" name="block" value="block"></textarea>
+            <input type="text" id="topic" name="topic" value="topic"></textarea>
+            <input type="text" id="learning-objective" name="learningObjective" value="learning-objective"></textarea>
+            <br>
             <br>
             <button id="submit-btn" type="button">Shift Wording</button>
             <br>

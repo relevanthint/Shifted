@@ -1,63 +1,11 @@
-// const submitBtn = document.getElementById("submit-btn");
-// const baseWordingInput = document.getElementById("base-wording");
-// const shiftedWordingInput = document.getElementById("shifted-wording");
-
-// // Get the radio buttons for the theme question
-// var themeInputs = document.getElementsByName("theme");
-// var toneInputs = document.getElementsByName("tone");
-// var lengthInputs = document.getElementsByName("length");
-// var theme = ''
-// var tone = ''
-// var length=''
-
-// // Add a change event listener to each radio button
-// themeInputs.forEach(function(input) {
-//   input.addEventListener("change", function() {
-//     // Update the theme variable with the selected value
-//     theme = document.querySelector('input[name="theme"]:checked') ? document.querySelector('input[name="theme"]:checked').value : null;
-//     // Log the values of the variables to the console
-//     console.log(theme);
-//   });
-// });
-
-// // Add a change event listener to each radio button
-// toneInputs.forEach(function(input) {
-//   input.addEventListener("change", function() {
-//     // Update the theme variable with the selected value
-//     tone = document.querySelector('input[name="tone"]:checked') ? document.querySelector('input[name="tone"]:checked').value : null;
-//     // Log the values of the variables to the console
-//     console.log(tone);
-//   });
-// });
-
-// // Add a change event listener to each radio button
-// lengthInputs.forEach(function(input) {
-//   input.addEventListener("change", function() {
-//     // Update the theme variable with the selected value
-//     length = document.querySelector('input[name="length"]:checked') ? document.querySelector('input[name="length"]:checked').value : null;
-//     // Log the values of the variables to the console
-//     console.log(length);
-//   });
-// });
-
-
-// // Add event listener to submit button
-// submitBtn.addEventListener("click", async() => {
-//   const response = await fetch("/shiftwording/", {
-//         method: "POST",
-//         headers: { "content-type": "application/json" },
-//         body: JSON.stringify({ 'baseWording': baseWordingInput.value, 'theme': theme, 'tone': tone, 'length': length})
-//   });
-//   const data = await response.json();
-//   shiftedWordingInput.value = data;
-// });
-
-
-
 // Get references to DOM elements
 const submitBtn = document.getElementById("submit-btn");
 const baseWordingInput = document.getElementById("base-wording");
 const shiftedWordingInput = document.getElementById("shifted-wording");
+
+const subjectInput= document.getElementById("subject")
+const blockInput = document.getElementById("block")
+const topicInput = document.getElementById("topic")
 const learningObjectiveInput = document.getElementById("learning-objective")
 
 // Initialize variables for selected options
@@ -111,7 +59,19 @@ submitBtn.addEventListener("click", async () => {
 
     // Update shifted wording input field with response from server
     const shiftedWording = await response.json();
+
     shiftedWordingInput.value = shiftedWording;
+    subjectInput.value = "hola"
+    blockInput.value = "hola"
+    topicInput.value = "hola"
+    learningObjectiveInput.value = "hola"
+
+    subjectInput.style.display = "block";
+    blockInput.style.display = "block";
+    topicInput.style.display = "block";
+    learningObjectiveInput.style.display = "block";
+
+
   } catch (error) {
     console.error(error);
   }

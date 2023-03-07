@@ -17,7 +17,7 @@ class BaseWording(BaseModel):
     learningObjective:str
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = "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"
 # Set the model to use (in this case, GPT-3)
 model_engine = "text-davinci-003"
 
