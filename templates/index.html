@@ -61,7 +61,7 @@
               </label>
             </div>
 
-            <label>Tone:</label>
+            <!-- <label>Tone:</label>
             <div class="options">
                 <label><input id="friendly" class="option" type="radio" name="tone" value="Friendly">Friendly</label>
                 <label><input id="encouraging" class="option" type="radio" name="tone" value="Encouraging">Encouraging</label>
@@ -74,7 +74,56 @@
                 <label><input id="short" class="option" type="radio" name="length" value="Short">Short</label>
                 <label><input id="medium" class="option" type="radio" name="length" value="Medium" checked>Medium</label>
                 <label><input id="long" class="option" type="radio" name="length" value="Long">Long</label>
+            </div> -->
+
+            <label>Tone:</label>
+            <div class="options">
+            <label class="btn-option" for="friendly">
+                <input id="friendly" class="option" type="radio" name="tone" value="Friendly">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Friendly</span>
+            </label>
+            <label class="btn-option" for="encouraging">
+                <input id="encouraging" class="option" type="radio" name="tone" value="Encouraging">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Encouraging</span>
+            </label>
+            <label class="btn-option" for="positive">
+                <input id="positive" class="option" type="radio" name="tone" value="Positive">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Positive</span>
+            </label>
+            <label class="btn-option" for="professional">
+                <input id="professional" class="option" type="radio" name="tone" value="Professional">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Professional</span>
+            </label>
+            <label class="btn-option" for="clear">
+                <input id="clear" class="option" type="radio" name="tone" value="Clear" checked>
+                <span class="btn-icon"></span>
+                <span class="btn-label">Clear</span>
+            </label>
             </div>
+
+            <label>Length:</label>
+            <div class="options">
+            <label class="btn-option" for="short">
+                <input id="short" class="option" type="radio" name="length" value="Short">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Short</span>
+            </label>
+            <label class="btn-option" for="medium">
+                <input id="medium" class="option" type="radio" name="length" value="Medium" checked>
+                <span class="btn-icon"></span>
+                <span class="btn-label">Medium</span>
+            </label>
+            <label class="btn-option" for="long">
+                <input id="long" class="option" type="radio" name="length" value="Long">
+                <span class="btn-icon"></span>
+                <span class="btn-label">Long</span>
+            </label>
+            </div>
+
             <br>
             <label for="base-wording">Base Wording:</label>
             <br>
