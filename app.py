@@ -4,6 +4,7 @@ from fastapi.templating import Jinja2Templates
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 import openai
+import os
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
@@ -17,7 +18,7 @@ class BaseWording(BaseModel):
     learningObjective:str
 
 # Set your OpenAI API key
-openai.api_key = "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"
+openai.api_key = os.environ.get("OPENAI_API_KEY")
 # Set the model to use (in this case, GPT-3)
 model_engine = "text-davinci-003"
 
